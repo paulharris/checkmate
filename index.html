@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Checkmate in one!</title>
+    <meta name="description" content="How many checkmates can you solve in one minute?">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon/queen.jpg">
+
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>White to move</h1>
+      <p>How many checkmates can you solve in one minute?</p>
+
+      <div class="controls">
+        <button id="start" class="btn">Start!</button>
+        <div id="timer" class="timer hidden"></div>
+        <div id="score" class="score hidden"></div>
+      </div>
+
+      <div id="promotions" class="promotions hidden">
+        <img id="promote_q" src="img/chesspieces/wikipedia/wQ.png">
+        <img id="promote_r" src="img/chesspieces/wikipedia/wR.png">
+        <img id="promote_b" src="img/chesspieces/wikipedia/wB.png">
+        <img id="promote_n" src="img/chesspieces/wikipedia/wN.png">
+      </div>
+      <div id="final_score"></div>
+      <div id="board" class="board"></div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/chessboard-1.0.0.min.js"></script>
+    <script src="js/chess.js"></script>
+    <script src="js/mateinone.js"></script>
+    <script>
+    </script>
+  </body>
+</html>

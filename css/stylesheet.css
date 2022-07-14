@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* background-color: lightblue; */
+  background-color: black;
+  color: #fff;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  margin: 0 20px;
+  padding: 0;
+  text-align: center;
+
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (orientation: portrait) {
+  .container {
+    width: 90vw;
+  }
+}
+@media (orientation: landscape) {
+  .container {
+    width: 60vh;
+  }
+}
+
+h1 {
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+.controls {
+  margin: 0 auto 2em;
+  position: relative;
+}
+
+.board {
+  display: block;
+  margin: 10px auto 30px;
+  touch-action: none;
+}
+
+.btn,
+.timer,
+.score {
+  display: block;
+  font-size: 24px;
+}
+.btn,
+.timer {
+  background-color: darkgrey;
+  border: 0;
+  border-radius: 10px;
+  color: inherit;
+  font-weight: bold;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.btn {
+  cursor: pointer;
+}
+.timer {
+  left: 50%;
+  top: 0;
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 100px;
+}
+.score {
+  color: #000;
+  font-style: italic;
+  line-height: 48px;
+  position: relative;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+
+.final-score {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-top: 100px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.warning {
+  color: #ff0000 !important;
+}
